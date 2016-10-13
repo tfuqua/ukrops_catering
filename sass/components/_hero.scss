@@ -1,5 +1,26 @@
-.hero {
+.hero.hero-1, .hero.hero-2 {
   margin-top:-15px; //move hero image up to header
+
+  min-height: 0px;
+  overflow: hidden;
+
+  img {
+
+    height:400px;
+    width: auto;
+    float:left;
+
+    @media (min-width: $screen-md-min) {
+      width:100%;
+      height: auto;
+      float:none;
+    }
+  }
+
+  .hero-text{
+    background: transparent;
+    display: none;
+  }
 }
 .hero.hero-2 {
   margin-top:0;
