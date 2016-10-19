@@ -1,27 +1,43 @@
 .hero.hero-1, .hero.hero-2 {
   margin-top:-15px; //move hero image up to header
 
-  min-height: 0px;
-  overflow: hidden;
-
   img {
 
-    height:400px;
-    width: auto;
-    float:left;
-
     @media (min-width: $screen-md-min) {
-      width:100%;
-      height: auto;
-      float:none;
+
     }
   }
 
   .hero-text{
-    background: transparent;
-    display: none;
+
   }
 }
-.hero.hero-2 {
+.hero.hero-3 {
   margin-top:0;
+  padding: 20px 0;
+
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-position: top right;
+  background-repeat: no-repeat;
+
+    h3 {
+      font-size: 40px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.2;
+      color: #c1311a;
+    }
+
+    .hero-text{
+      font-size: 22px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.59;
+      color: #794400;
+    }
 }
