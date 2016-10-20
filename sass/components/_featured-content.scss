@@ -87,9 +87,8 @@
       a {
         border-radius: 5px;
         color:#fff;
-        background-color: #bf311a;
-        background-image: none;
-        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+        background-image: linear-gradient(to bottom,#db2c10,#bf311a);
+        box-shadow: 0 0 4px 0 rgba(0,0,0,.1);
       }
     }
 
