@@ -13,18 +13,41 @@
     margin: 30px 15px;
   }
 }
-.hero.hero-3 {
-  margin-top:0;
-  padding: 20px 0;
 
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-  background-position: top right;
-  background-repeat: no-repeat;
+.hero.hero-2 {
+  padding: 20px 0px 0px;
+  background-image: url('images/wood-texture.png');
+  background-position: top-left;
+  background-size: cover;
+  overflow: hidden;
 
-    h3 {
+  .container-fluid {
+    padding-bottom: 0px;
+
+    @media (min-width: $screen-sm-min) {
+      padding-bottom: 40px;
+    }
+  }
+
+  .hero-text{
+    font-size: 22px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.59;
+    color: #794400;
+    z-index: 200;
+    position: relative;
+    display: inline-block;
+    width:auto;
+    margin:30px auto;
+
+    @media (min-width: $screen-md-min) {
+      margin: 30px 15px 30px 15px;
+      width: 45%;
+    }
+
+    h3{
       font-size: 40px;
       font-weight: 500;
       font-style: normal;
@@ -33,12 +56,26 @@
       color: #c1311a;
     }
 
-    .hero-text{
-      font-size: 22px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.59;
-      color: #794400;
+  }
+
+  .hero-img-wrapper {
+    width:90%;
+
+    @media (min-width: $screen-sm-min) {
+      width:60%;
+      margin:0 auto;
     }
+
+    @media (min-width: $screen-md-min) {
+      position: absolute;
+      width:50%;
+      right:0;
+      top:0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }

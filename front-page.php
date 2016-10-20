@@ -65,23 +65,24 @@ get_header(); ?>
 
       <!-- Hero Image -->
       <?php if(get_field('hero_2_image')) { ?>
-        <?php $background = wp_get_attachment_image_src(get_field('hero_2_image'), 'full', false); ?>
-  	     <div class="hero hero-3" style="background-image: url('<?php echo $background[0] ?>');">
-          <div class="hero-text-wrapper">
-            <div>
-              <div class="hero-text">
-                <h3>
-                  <?php echo get_field('hero_header')?>
-                </h3>
-                <?php echo get_field('hero_2_text')?>
-                <?php if(get_field('button_2_text')) { ?>
-                <div class="hero-button">
-                  <a href="#"><?php echo get_field('button_2_text')?></a>
-                </div>
-                <?php } ?>
-              </div>
+      	<div class="hero hero-2">
+          <div class="container-fluid">
+            <div class="hero-img-wrapper">
+              <?php echo wp_get_attachment_image(get_field('hero_2_image'), 'full', false, array( 'class' => '') ); ?>
             </div>
-
+            <div class="hero-text">
+              <h3>
+                <?php echo get_field('hero_header')?>
+              </h3>
+              <div>
+                <?php echo get_field('hero_2_text')?>
+              </div>
+              <?php if(get_field('button_text')) { ?>
+              <div class="hero-button">
+                <a href="<?php echo get_field('button_2_link')?>"><?php echo get_field('button_2_text')?></a>
+              </div>
+              <?php } ?>
+            </div>
           </div>
         </div>
       <?php } ?>

@@ -37,29 +37,55 @@ header {
     background: rgba(255, 255, 255, 0.85);
     margin: 30px 15px; }
 
-.hero.hero-3 {
-  margin-top: 0;
-  padding: 20px 0;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-  background-position: top right;
-  background-repeat: no-repeat; }
-  .hero.hero-3 h3 {
-    font-size: 40px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.2;
-    color: #c1311a; }
-  .hero.hero-3 .hero-text {
+.hero.hero-2 {
+  padding: 20px 0px 0px;
+  background-image: url("images/wood-texture.png");
+  background-position: top-left;
+  background-size: cover;
+  overflow: hidden; }
+  .hero.hero-2 .container-fluid {
+    padding-bottom: 0px; }
+    @media (min-width: 481px) {
+      .hero.hero-2 .container-fluid {
+        padding-bottom: 40px; } }
+  .hero.hero-2 .hero-text {
     font-size: 22px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.59;
-    color: #794400; }
+    color: #794400;
+    z-index: 200;
+    position: relative;
+    display: inline-block;
+    width: auto;
+    margin: 30px auto; }
+    @media (min-width: 900px) {
+      .hero.hero-2 .hero-text {
+        margin: 30px 15px 30px 15px;
+        width: 45%; } }
+    .hero.hero-2 .hero-text h3 {
+      font-size: 40px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.2;
+      color: #c1311a; }
+  .hero.hero-2 .hero-img-wrapper {
+    width: 90%; }
+    @media (min-width: 481px) {
+      .hero.hero-2 .hero-img-wrapper {
+        width: 60%;
+        margin: 0 auto; } }
+    @media (min-width: 900px) {
+      .hero.hero-2 .hero-img-wrapper {
+        position: absolute;
+        width: 50%;
+        right: 0;
+        top: 0; } }
+    .hero.hero-2 .hero-img-wrapper img {
+      width: 100%;
+      height: auto; }
 
 .featured-content-wrapper {
   background-image: none; }
