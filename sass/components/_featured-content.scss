@@ -74,6 +74,7 @@
       font-style: normal;
       font-stretch: normal;
       line-height: 1.5;
+      font-weight: 400;
       color: #794400;
 
       @media (min-width: $screen-md-min) {
@@ -96,6 +97,7 @@
       width: 100%;
       font-size: 32px;
       margin:0;
+      text-transform: capitalize;
       padding: 30px 35px 15px;
       font-size: 30px;
       font-weight: 500;

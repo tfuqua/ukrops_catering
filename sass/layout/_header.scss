@@ -5,15 +5,16 @@ header{
   margin-bottom:15px;
 
   .brand {
-    width:100%;
+    a {
+      display: block;
+    }
 
     img{
       position: absolute;
       height:75px;
       top:0;
       margin:0;
-      margin-left: -65px;
-      left:50%;
+      left:15px;
       z-index: 600;
       border-radius: 2px;
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.13);

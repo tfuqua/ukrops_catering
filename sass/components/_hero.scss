@@ -1,4 +1,4 @@
-.hero.hero-1, .hero.hero-2 {
+.hero.hero-1 {
   margin-top:-15px; //move hero image up to header
 
   img {
@@ -9,7 +9,8 @@
   }
 
   .hero-text{
-
+    background: rgba(255,255,255,.85);
+    margin: 30px 15px;
   }
 }
 .hero.hero-3 {
