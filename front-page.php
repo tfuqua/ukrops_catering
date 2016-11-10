@@ -52,7 +52,7 @@ get_header(); ?>
                     </div>
                   </div>
                   <div class="featured-button">
-                    <a hef="#">
+                    <a href="<?php echo the_sub_field('button_link')?> ">
                       <?php echo the_sub_field('button_text');?>
                     </a>
                   </div>
