@@ -73,7 +73,7 @@ get_header(); ?>
             <div class="hero-text-wrapper">
               <div class="hero-text">
                 <h3>
-                  <?php echo get_field('hero_header')?>
+                  <?php echo get_field('hero_2_header')?>
                 </h3>
                 <div>
                   <?php echo get_field('hero_2_text')?>
