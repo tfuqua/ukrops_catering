@@ -85,7 +85,8 @@ header {
         height: 105%; } }
     .hero.hero-2 .hero-img-wrapper img {
       height: 100%;
-      width: auto; }
+      width: auto;
+      max-width: none; }
     @media (min-width: 481px) {
       .hero.hero-2 .hero-img-wrapper {
         width: 60%;

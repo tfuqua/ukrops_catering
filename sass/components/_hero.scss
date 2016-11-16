@@ -75,6 +75,7 @@
     img {
       height: 100%;
       width:auto;
+      max-width: none;
     }
 
     @media (min-width: $screen-sm-min) {
