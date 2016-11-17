@@ -9,4 +9,17 @@ function ukrops_catering_enqueue_styles() {
 
 add_action( 'wp_enqueue_scripts', 'ukrops_catering_enqueue_styles' );
 
+function remove_page_templates( $pages_templates ) {
+
+    unset($pages_templates['templates/blog.php']);
+    unset($pages_templates['templates/careers.php']);
+    unset($pages_templates['templates/community.php']);
+    unset($pages_templates['templates/food-team.php']);
+    unset($pages_templates['templates/order-online.php']);
+    unset($pages_templates['templates/our-story.php']);
+
+    return $pages_templates;
+}
+add_filter( 'theme_page_templates', 'remove_page_templates' );
+
 ?>

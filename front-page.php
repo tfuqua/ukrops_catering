@@ -36,7 +36,6 @@ get_header(); ?>
           <div class="container-fluid">
             <?php while ( have_rows('featured_content') ) : the_row(); ?>
               <div class="featured-item">
-                <div class="featured-border"></div>
                 <h3><?php echo the_sub_field('heading');?></h3>
                 <div class="featured-section">
                   <div class="featured-body">
@@ -51,8 +50,8 @@ get_header(); ?>
                         <?php } ?>
                     </div>
                   </div>
-                  <div class="featured-button">
-                    <a href="<?php echo the_sub_field('button_link')?> ">
+                  <div>
+                    <a class="button" href="<?php echo the_sub_field('button_link')?> ">
                       <?php echo the_sub_field('button_text');?>
                     </a>
                   </div>
