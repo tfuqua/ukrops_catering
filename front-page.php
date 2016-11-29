@@ -17,7 +17,15 @@ get_header(); ?>
          <div class="hero-text-wrapper">
            <div>
              <div class="hero-text">
-               <?php echo get_field('hero_text')?>
+               <div class="hero-header">
+                  <?php echo get_field('hero_heading')?>
+                </div>
+                <?php if (get_field('hero_body')){?>
+                  <div class="hero-body">
+                    <?php echo get_field('hero_body')?>
+                  </div>
+                <?php
+                }?>
                <?php if(get_field('button_text')) { ?>
                <div class="hero-button">
                  <a href="<?php echo get_field('button_link')?>"><?php echo get_field('button_text')?></a>
@@ -71,10 +79,10 @@ get_header(); ?>
             </div>
             <div class="hero-text-wrapper">
               <div class="hero-text">
-                <h3>
+                <div class="hero-header">
                   <?php echo get_field('hero_2_header')?>
-                </h3>
-                <div>
+                </div>
+                <div class="hero-body">
                   <?php echo get_field('hero_2_text')?>
                 </div>
                 <?php if(get_field('button_text')) { ?>

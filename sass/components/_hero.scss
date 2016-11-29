@@ -31,31 +31,10 @@
   }
 
   .hero-text{
-    background: rgba(255,255,255,.85);
-    font-size: 22px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.59;
-    color: #794400;
-    z-index: 200;
-    position: relative;
-    display: inline-block;
-    width:auto;
-    margin:30px auto;
 
     @media (min-width: $screen-md-min) {
       margin: 30px 15px 30px 15px;
       width: 45%;
-    }
-
-    h3{
-      font-size: 40px;
-      font-weight: 500;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.2;
-      color: #c1311a;
     }
 
   }
