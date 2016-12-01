@@ -35,7 +35,12 @@ header {
   margin-top: -15px; }
   .hero.hero-1 .hero-text {
     background: rgba(255, 255, 255, 0.85);
-    margin: 30px 15px; }
+    margin: 30px 5%;
+    width: 90%; }
+    @media (min-width: 900px) {
+      .hero.hero-1 .hero-text {
+        width: 75%;
+        margin: 30px 15px; } }
 
 .hero.hero-2 {
   padding: 20px 0px 0px;
@@ -94,6 +99,8 @@ header {
         background: #fff; }
       .featured-content-wrapper .container-fluid .featured-item:after {
         content: "";
+        top: 0;
+        left: 0;
         border: 1px dashed #704400;
         position: absolute;
         margin: 15px;

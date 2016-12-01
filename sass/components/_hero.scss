@@ -10,7 +10,13 @@
 
   .hero-text{
     background: rgba(255,255,255,.85);
-    margin: 30px 15px;
+    margin: 30px 5%;
+    width:90%;
+
+      @media (min-width: $screen-md-min) {
+        width:75%;
+        margin:30px 15px;
+      }
   }
 }
 

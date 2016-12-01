@@ -24,6 +24,8 @@
 
       &:after{
         content:"";
+        top:0;
+        left:0;
         border: 1px dashed #704400;
         position: absolute;
         margin:15px;
