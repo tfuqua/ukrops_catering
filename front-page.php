@@ -41,7 +41,7 @@ get_header(); ?>
     <?php
       if( have_rows('featured_content') ) { ?>
         <div class="featured-content-wrapper">
-          <div class="container-fluid">
+          <div class="featured-itemss">
             <?php while ( have_rows('featured_content') ) : the_row(); ?>
               <div class="featured-item">
                 <h3><?php echo the_sub_field('heading');?></h3>

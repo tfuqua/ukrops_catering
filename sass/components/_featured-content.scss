@@ -2,11 +2,14 @@
 
   background-image: none;
 
-  .container-fluid {
+  .featured-itemss {
+    margin: 0 auto;
+    max-width: $max-site-width;
+    padding:30px 15px 50px;
 
-      padding: 0 30px;
-      margin: 0 auto;
-      z-index: 2;
+    @media (min-width: $screen-md-min) {
+      @include flexbox();
+    }
 
     .featured-item {
 
@@ -14,8 +17,14 @@
       position: relative;
       @include box-shadow(0 2px 12px 3px rgba(0, 0, 0, 0.15));
 
-      &:nth-child(3n){
-        @include flex();
+      @media (min-width: $screen-md-min) {
+        @include flex(1 1 0%);
+        @include flexbox();
+        @include flex-direction(column);
+
+        max-width: none;
+        margin: -35px 20px -35px 0;
+        &:last-child{margin-right:0; }
       }
 
       &:nth-child(n){

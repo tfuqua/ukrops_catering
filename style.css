@@ -79,25 +79,46 @@ header {
 
 .featured-content-wrapper {
   background-image: none; }
-  .featured-content-wrapper .container-fluid {
-    padding: 0 30px;
+  .featured-content-wrapper .featured-itemss {
     margin: 0 auto;
-    z-index: 2; }
-    .featured-content-wrapper .container-fluid .featured-item {
+    max-width: 1200px;
+    padding: 30px 15px 50px; }
+    @media (min-width: 900px) {
+      .featured-content-wrapper .featured-itemss {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; } }
+    .featured-content-wrapper .featured-itemss .featured-item {
       background: #fff;
       position: relative;
       -webkit-box-shadow: 0 2px 12px 3px rgba(0, 0, 0, 0.15);
       -moz-box-shadow: 0 2px 12px 3px rgba(0, 0, 0, 0.15);
       box-shadow: 0 2px 12px 3px rgba(0, 0, 0, 0.15); }
-      .featured-content-wrapper .container-fluid .featured-item:nth-child(3n) {
-        -webkit-box-flex: 1;
-        -moz-box-flex: 1;
-        -webkit-flex: 1;
-        -ms-flex: 1;
-        flex: 1; }
-      .featured-content-wrapper .container-fluid .featured-item:nth-child(n) {
+      @media (min-width: 900px) {
+        .featured-content-wrapper .featured-itemss .featured-item {
+          -webkit-box-flex: 1 1 0%;
+          -moz-box-flex: 1 1 0%;
+          -webkit-flex: 1 1 0%;
+          -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+          display: -webkit-box;
+          display: -moz-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex-direction: column;
+          -moz-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          max-width: none;
+          margin: -35px 20px -35px 0; }
+          .featured-content-wrapper .featured-itemss .featured-item:last-child {
+            margin-right: 0; } }
+      .featured-content-wrapper .featured-itemss .featured-item:nth-child(n) {
         background: #fff; }
-      .featured-content-wrapper .container-fluid .featured-item:after {
+      .featured-content-wrapper .featured-itemss .featured-item:after {
         content: "";
         top: 0;
         left: 0;
@@ -106,34 +127,34 @@ header {
         margin: 15px;
         width: calc(100% - 30px);
         height: calc(100% - 30px); }
-    .featured-content-wrapper .container-fluid .featured-section {
+    .featured-content-wrapper .featured-itemss .featured-section {
       margin: 20px;
       z-index: 200;
       background: none; }
       @media (min-width: 900px) {
-        .featured-content-wrapper .container-fluid .featured-section {
+        .featured-content-wrapper .featured-itemss .featured-section {
           margin: 0;
           padding: 10px 30px 30px; } }
     @media (min-width: 900px) {
-      .featured-content-wrapper .container-fluid .flex-div {
+      .featured-content-wrapper .featured-itemss .flex-div {
         display: -webkit-box;
         display: -moz-box;
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex; }
-        .featured-content-wrapper .container-fluid .flex-div > div {
+        .featured-content-wrapper .featured-itemss .flex-div > div {
           -webkit-box-flex: 1;
           -moz-box-flex: 1;
           -webkit-flex: 1;
           -ms-flex: 1;
           flex: 1; } }
-    .featured-content-wrapper .container-fluid .featured-img {
+    .featured-content-wrapper .featured-itemss .featured-img {
       text-align: center; }
-      .featured-content-wrapper .container-fluid .featured-img img {
+      .featured-content-wrapper .featured-itemss .featured-img img {
         max-width: 75%;
         min-width: 0%;
         height: auto; }
-    .featured-content-wrapper .container-fluid .featured-body {
+    .featured-content-wrapper .featured-itemss .featured-body {
       font-size: 18px;
       font-weight: normal;
       font-style: normal;
@@ -142,9 +163,9 @@ header {
       font-weight: 400;
       color: #794400; }
       @media (min-width: 900px) {
-        .featured-content-wrapper .container-fluid .featured-body {
+        .featured-content-wrapper .featured-itemss .featured-body {
           text-align: left; } }
-    .featured-content-wrapper .container-fluid h3 {
+    .featured-content-wrapper .featured-itemss h3 {
       width: 100%;
       font-size: 32px;
       margin: 0;
