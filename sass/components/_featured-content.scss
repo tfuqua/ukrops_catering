@@ -2,10 +2,10 @@
 
   background-image: none;
 
-  .featured-itemss {
+  .featured-items{
     margin: 0 auto;
     max-width: $max-site-width;
-    padding:30px 15px 50px;
+    padding:10px 15px;
 
     @media (min-width: $screen-md-min) {
       @include flexbox();
@@ -18,7 +18,7 @@
       @include box-shadow(0 2px 12px 3px rgba(0, 0, 0, 0.15));
 
       @media (min-width: $screen-md-min) {
-        @include flex(1 1 0%);
+        @include flex();
         @include flexbox();
         @include flex-direction(column);
 
@@ -87,6 +87,8 @@
       line-height: 1.5;
       font-weight: 400;
       color: #794400;
+
+      @include flex(1 0 auto);
 
       @media (min-width: $screen-md-min) {
         text-align: left;
